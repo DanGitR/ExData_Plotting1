@@ -18,5 +18,5 @@ axis.POSIXct(1, at = seq(r[1], r[2], by = "day"), format = "%a")
 legend("topright", legend=c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"),col=c("black", "red", "blue"),lty=1)
 
 #Create plot3.png file in current working directory
-dev.copy(png,'plot3.png')
+png(filename = "plot3.png",width = 480, height = 480, units = "px")
 dev.off()

@@ -15,5 +15,5 @@ r <- as.POSIXct(round(range(dfsubset$Time), "days"))
 axis.POSIXct(1, at = seq(r[1], r[2], by = "day"), format = "%a")
 
 #Create plot2.png file in current working directory
-dev.copy(png,'plot2.png')
+png(filename = "plot2.png",width = 480, height = 480, units = "px")
 dev.off()

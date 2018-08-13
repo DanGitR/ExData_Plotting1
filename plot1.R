@@ -12,5 +12,5 @@ dfsubset <- datesubset(path = pathhpc, date1 = "2007-02-01", date2 = "2007-02-03
 hist(dfsubset$Global_active_power,col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
 
 #Create plot1.png file in current working directory
-dev.copy(png,'plot1.png')
+png(filename = "plot1.png",width = 480, height = 480, units = "px")
 dev.off()
